@@ -1,8 +1,8 @@
 $footer_bg: $purple;
 $footer_color: $white;
 footer{
-    background-color: $footer_bg;
-    padding: 20px 0;
+    
+    @include sectionStyle($footer_bg);
     text-align: center;
     
     .container{

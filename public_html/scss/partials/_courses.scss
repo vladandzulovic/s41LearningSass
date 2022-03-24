@@ -1,4 +1,6 @@
+
+$courses_bg: $white;
+
 .courses-section{
-    background-color: #fff;
-    padding: 30px 0;
+    @include sectionStyle($courses_bg, 30px);
 }

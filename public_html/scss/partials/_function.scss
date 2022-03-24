@@ -1,0 +1,38 @@
+
+@mixin sectionStyle($bg, $padding:20px){
+    background-color: $bg;
+    padding: $padding 0;
+}
+
+
+@mixin radius($radius){
+    @if($enable_rounded){
+        border-radius: $radius;
+        -webkit-border-radius: $radius;
+        -ms-border-radius: $radius;
+        -moz-border-radius: $radius;
+    }
+    @else{
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -ms-border-radius: 0;
+        -moz-border-radius: 0;
+    }
+
+}
+
+@mixin radiusAll($tl, $tr, $br, $bl){
+    @if($enable_rounded){
+        border-radius: $tl $tr $br $bl;
+        -webkit-border-radius: $tl $tr $br $bl;
+        -ms-border-radius: $tl $tr $br $bl;
+        -moz-border-radius: $tl $tr $br $bl;
+    }
+    @else{
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -ms-border-radius: 0;
+        -moz-border-radius: 0;
+    }
+
+}
