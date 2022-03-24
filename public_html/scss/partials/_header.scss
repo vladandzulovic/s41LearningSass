@@ -1,0 +1,77 @@
+$header_bg: $red;
+$header_color: $white;
+$menu_border: $white;
+$link_hover_bg: $white;
+$link_hover_color: $red;
+
+
+header{
+    background-color: $header_bg;
+    padding: 20px 0;
+
+    a{
+        color:$header_color;
+    }
+    .branding{
+        text-align: center;
+        margin-bottom: 20px;
+        @media(min-width:992px){
+            margin-bottom: 0;
+        }
+    }
+
+    nav{
+        @media(min-width:992px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+    }
+
+    ul{
+        list-style: none;
+        padding-left: 0;
+        text-align: center;
+
+        @media(min-width:992px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a{
+            display: block;
+            padding: 5px 0;
+            border-bottom: 1px solid $menu_border;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: 0.3s linear;
+            &:hover, &.active{
+                color:$link_hover_color;
+                background-color: $link_hover_bg;
+            }
+            
+            
+            @media(min-width:992px){
+                border: none;
+                padding: 5px 10px;
+                font-size: 1.6rem;
+            }
+        }
+        
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
