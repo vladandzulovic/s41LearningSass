@@ -1,9 +1,39 @@
+$footer_bg: $purple;
+$footer_color: $white;
 footer{
-    background-color: $purple;
+    background-color: $footer_bg;
     padding: 20px 0;
+    text-align: center;
+    
+    .container{
+        @media(min-width:992px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 20px;
+        @media(min-width:992px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+        }
+        a{
+            display: block;
+            padding: 5px 0;
+            @media(min-width:992px){
+                padding: 5px;
+            }
+        }
+    }
+    
+    a,p{
+        color:$footer_color;
+    }
 }
 
-footer a,
-footer p{
-    color:$white;
-}
+
