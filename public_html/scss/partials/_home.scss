@@ -1,5 +1,13 @@
 $home_bg: $white;
 
 .home-section{
-    @include sectionStyle($home_bg, 30px);
+    @include sectionStyle($home_bg, 200px);
+    background-image: url(./../img/home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-bottom: 20px;
+    
+    
 }

@@ -2,13 +2,4 @@ $services_bg: $white;
 .service-section{
     @include sectionStyle($services_bg, 30px);
     
-    
-    
-    .btn{
-        display: inline-block;
-        background-color: #fff;
-        padding: 10px 30px;
-        border: 1px solid #000;
-        @include radiusAll(10px, 0, 10px, 0);
-    }
 }

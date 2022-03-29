@@ -1,0 +1,102 @@
+
+$color-palete: (
+    'cool': $blue,
+    'hot': $red,
+    'awesome': $purple,
+    'info':$yellow,
+    'fancy': $orange
+);
+
+$display-palete: (
+    none, block, flex, inline-block, inline, inline-flex
+);
+
+
+@each $value in $display-palete{
+    .d-#{$value}{
+        display: $value;
+    }
+}
+
+
+// red($color)
+// blue($color)
+// green($color)
+// darken($color, $amount) 
+//  lighten($color, $amount)
+// rgba($color, opacity)
+
+%btn{
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    @include radiusAll(10px, 0, 10px, 0);
+}
+
+
+
+@each $key, $value in $color-palete{
+    .btn-#{$key}{
+    @extend %btn;
+    background-color: $value;
+    color: colorYIQ($value);
+    &:hover{
+        background-color: darken($value,20%);
+    }
+}
+
+.bg-#{$key}{
+    background-color: $value;
+}
+
+.text-#{$key}{
+    color: $value;
+}
+
+}
+
+
+
+
+
+/*
+
+.btn-cool{
+    @extend %btn;
+    background-color: $cool-bg;
+    color: colorYIQ($cool-bg);
+    &:hover{
+        background-color: darken($cool-bg,20%)
+    }
+}
+
+.btn-hot{
+    @extend %btn;
+    background-color: $hot-bg;
+    color: colorYIQ($hot-bg);
+    &:hover{
+        background-color: darken($hot-bg,20%)
+    }
+}
+
+
+.btn-awesome{
+    @extend %btn;
+    background-color: $awesome-bg;
+    color: colorYIQ($awesome-bg);
+    &:hover{
+        background-color: darken($awesome-bg,20%)
+    }
+}
+
+.btn-info{
+    @extend %btn;
+    background-color: $info-bg;
+    color: colorYIQ($info-bg);
+    &:hover{
+        background-color: darken($info-bg,20%)
+    }
+}
+
+*/

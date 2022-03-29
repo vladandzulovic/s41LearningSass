@@ -36,3 +36,18 @@
     }
 
 }
+
+
+@function colorYIQ($color){
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color);
+    $yiq: $r*0.299 + $g*0.587 + $b*0.114;
+    
+    
+    @if($yiq > 120){
+        @return $dark;
+    }@else{
+        @return $white;
+    }
+}

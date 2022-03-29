@@ -338,6 +338,14 @@ template {
   display: none;
 }
 
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Mar 29, 2022, 2:06:26 PM
+    Author     : frontend
+*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -367,6 +375,174 @@ body {
   padding: 0 15px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.btn-cool, .btn-hot, .btn-awesome, .btn-info, .btn-fancy {
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+.btn-cool {
+  background-color: #00f;
+  color: #fff;
+}
+
+.btn-cool:hover {
+  background-color: #000099;
+}
+
+.bg-cool {
+  background-color: #00f;
+}
+
+.text-cool {
+  color: #00f;
+}
+
+.btn-hot {
+  background-color: #f00;
+  color: #fff;
+}
+
+.btn-hot:hover {
+  background-color: #990000;
+}
+
+.bg-hot {
+  background-color: #f00;
+}
+
+.text-hot {
+  color: #f00;
+}
+
+.btn-awesome {
+  background-color: #940a6d;
+  color: #fff;
+}
+
+.btn-awesome:hover {
+  background-color: #340427;
+}
+
+.bg-awesome {
+  background-color: #940a6d;
+}
+
+.text-awesome {
+  color: #940a6d;
+}
+
+.btn-info {
+  background-color: yellow;
+  color: #000;
+}
+
+.btn-info:hover {
+  background-color: #999900;
+}
+
+.bg-info {
+  background-color: yellow;
+}
+
+.text-info {
+  color: yellow;
+}
+
+.btn-fancy {
+  background-color: orange;
+  color: #000;
+}
+
+.btn-fancy:hover {
+  background-color: #996300;
+}
+
+.bg-fancy {
+  background-color: orange;
+}
+
+.text-fancy {
+  color: orange;
+}
+
+/*
+
+.btn-cool{
+    @extend %btn;
+    background-color: $cool-bg;
+    color: colorYIQ($cool-bg);
+    &:hover{
+        background-color: darken($cool-bg,20%)
+    }
+}
+
+.btn-hot{
+    @extend %btn;
+    background-color: $hot-bg;
+    color: colorYIQ($hot-bg);
+    &:hover{
+        background-color: darken($hot-bg,20%)
+    }
+}
+
+
+.btn-awesome{
+    @extend %btn;
+    background-color: $awesome-bg;
+    color: colorYIQ($awesome-bg);
+    &:hover{
+        background-color: darken($awesome-bg,20%)
+    }
+}
+
+.btn-info{
+    @extend %btn;
+    background-color: $info-bg;
+    color: colorYIQ($info-bg);
+    &:hover{
+        background-color: darken($info-bg,20%)
+    }
+}
+
+*/
 header {
   background-color: #f00;
   padding: 20px 0;
@@ -434,7 +610,13 @@ header ul a:hover, header ul a.active {
 
 .home-section {
   background-color: #fff;
-  padding: 30px 0;
+  padding: 200px 0;
+  background-image: url(./../img/home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  margin-bottom: 20px;
 }
 
 .about-section {
@@ -445,17 +627,6 @@ header ul a:hover, header ul a.active {
 .service-section {
   background-color: #fff;
   padding: 30px 0;
-}
-
-.service-section .btn {
-  display: inline-block;
-  background-color: #fff;
-  padding: 10px 30px;
-  border: 1px solid #000;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -ms-border-radius: 0;
-  -moz-border-radius: 0;
 }
 
 .comment-section {
