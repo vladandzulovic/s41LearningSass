@@ -1,6 +1,27 @@
 
 $courses_bg: $white;
-
+$table-border: $dark;
+$thead-bg: $purple;
+$thead-color:$white;
 .courses-section{
     @include sectionStyle($courses_bg, 30px);
+    
+    
+    table{
+        width: 100%;
+        border: 1px solid $table-border;
+        border-collapse: collapse;
+        th, td{
+            border: 1px solid $table-border;
+            padding: 5px;
+        }
+        
+        thead{
+            background-color: $thead-bg;
+            th, td{
+                color:$thead-color;
+                font-weight: 700;
+            }
+        }
+    }
 }
