@@ -1,3 +1,28 @@
 .contact-section{
     @include sectionStyle(transparent, 30px);
+    h2{
+        text-align: center;
+    }
+    
+    .contact-form{
+        max-width: 600px;
+        width: 100%;
+        margin-inline: auto;
+    }
+    
+    .form-group{
+        margin-bottom: 20px;
+        label{
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .form-control{
+            display: block;
+            width: 100%;
+            @include radius(5px);
+            line-height: 4rem;
+            border: none;
+            padding: 0 5px;
+        }
+    }
 }

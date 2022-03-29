@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -358,6 +359,8 @@ html {
 body {
   font-size: 1.6rem;
   background-color: #ccc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -369,6 +372,33 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
 }
 
 p {
@@ -676,6 +706,37 @@ header ul a:hover, header ul a.active {
 .contact-section {
   background-color: transparent;
   padding: 30px 0;
+}
+
+.contact-section h2 {
+  text-align: center;
+}
+
+.contact-section .contact-form {
+  max-width: 600px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.contact-section .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-section .form-group label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.contact-section .form-group .form-control {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -moz-border-radius: 0;
+  line-height: 4rem;
+  border: none;
+  padding: 0 5px;
 }
 
 footer {
